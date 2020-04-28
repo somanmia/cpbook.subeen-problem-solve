@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+int T,x,y,z,i,temp;
+scanf("%d",&T);
+for(i=1;i<=T;i++){
+   scanf("%d %d %d",&x,&y,&z);
+   if(x>y){
+    temp=y;
+    y=x;
+    x=temp;
+   }if(x>z){
+    temp=z;
+    z=x;
+    x=temp;
+   }if(y>z){
+     temp=y;
+     y=z;
+     z=temp;
+   }
+   printf("Case %d: %d %d %d\n",i,x,y,z);
+}
+return 0;
+}
