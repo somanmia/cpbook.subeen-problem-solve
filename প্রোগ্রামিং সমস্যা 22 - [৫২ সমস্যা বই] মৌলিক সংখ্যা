@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+int i,j,ck,a,b,count,root,T,k;
+scanf("%d",&T);
+for(k=1;k<=T;k++){
+        scanf("%d %d",&a,&b);
+
+   count=0;
+    for(i=a;i<=b;i++){
+            ck=0;
+           if(i>1){
+            root=sqrt(i);
+            for(j=2;j<=root;j++){
+                if(i%j==0){
+                     ck=1;
+                     break;
+                }
+            }if(ck==0){
+               count++;
+            }
+    }
+
+           }
+           printf("%d\n",count);
+
+}
+return 0;
+}
